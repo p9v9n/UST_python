@@ -46,13 +46,13 @@ while True:
         print(f'Bill List: {bill_list}')
 
     elif choice == 6:
-        print("Name,Quantity,Price,Total")
-        total_amount = 0
-        for item in cart:
-            name, quantity, price = item
-            total = price * quantity
-            total_amount += total
-            print(f'{name},{quantity},{price},{total}')
+        print("Name,Quantity,Price,Total") 
+        total_amount = 0 
+        for item in cart: 
+            name, quantity, price = item 
+            total = price * quantity 
+            total_amount += total 
+            print([name, quantity, price, total]) 
         print(f'Total Amount of Bill {total_amount}')
         break
 
